@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.yesteryearsradio" name="Yesteryears Radio" version="1.1" provider-name="Uncle Touchy">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Classic radio shows</summary>
+		<description lang="en">Classic comedy, sci-fi, crime, and more radio shows</description>
+		<platform>all</platform>
+		<news></news>
+		<genre>Classic</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>

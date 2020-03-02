@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.grindhousebeauty" name="Grindhouse Beauty" version="0.0.4" provider-name="Jenny">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Grindhouse beauty will help you look your best</summary>
+		<description lang="en">Makeup,hair and general beauty hacks all in one place.</description>
+		<platform>all</platform>
+		<news></news>
+		<genre>beauty</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>

@@ -1,0 +1,20 @@
+﻿<addon id="script.module.Mag-Sports" name="Mag-Sports" version="1.4" provider-name="Mag">
+	<requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.addon.common" />
+        <import addon="script.module.requests"  />
+        <import addon="script.module.beautifulsoup4"  />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>all</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Live Sports Site Scraper.</summary>
+		<description lang="en">A small plugin for playing streams from Live Sports Sites
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

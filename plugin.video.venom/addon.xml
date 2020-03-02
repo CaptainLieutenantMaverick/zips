@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.venom" version="3.4.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="2.9.0" />
+		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="script.module.resolveurl" version="5.0.27"/>
+		<import addon="script.module.openscrapers" />
+		<import addon="script.module.addon.signals" version="0.0.3"/>
+<!-- 		<import addon="context.venom" version="1.0.0"/> -->
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="venom.py">
+		<provides>video</provides>
+	</extension>
+
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/lib/"/>
+
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
+		<description lang="en">[B]Venom[/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot01a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot02a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
+		</assets>
+		<news>
+[B][COLOR red]Update - v3.4.5 - Jan. 11, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fix for TVDB latest change to SSL requirement.
+    Thank you ruiner!![/I]
+[COLOR yellow]--[/COLOR][I] Few settings tweaks for non Trakt users to hide
+    options not pertaining to them.[/I]
+[COLOR yellow]--[/COLOR][I] Added new Tools option to clean, remove old deprecated
+    settings from userdata settings.xml.  New option will clean
+    both Venom and OpenScrapers.  Please note that until
+    OpenScrapers pushes the PR request this only works
+    for Venom at this time.  Openscrapers update is coming
+    for this to also work there.  This tool will also auto run
+    upon new Venom update. Courtesy of FEN!![/I]
+[COLOR yellow]--[/COLOR][I] Few tweaks to TV Shows - Networks to fix random
+    dropped titles due to None types in api response.[/I]
+		</news>
+	</extension>
+</addon>
